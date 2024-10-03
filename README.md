@@ -4,7 +4,7 @@ Realizada por Andrés Hernández Ortega y Luka Kravarusic Sljapic
 
 Proyecto draw.io: https://drive.google.com/file/d/1jHXklJKXHCFSk1o-k9NsDQ2-O7wiioGj/view?usp=drive_link
 
-
+# Entidades definidas
 
 ## Medicamento
 - Un medicamento contiene un NOMBRE 
@@ -26,3 +26,5 @@ Por tanto, un medicamento no puede contener un mismo código y código de labora
 - Poseen un NOMBRE 
 - Se ubican en una DIRECCIÓN POSTAL
 
+## Pedido
+- Un pedido 
