@@ -29,7 +29,6 @@ Por tanto, un medicamento no puede contener un mismo código y código de labora
 - UNIDADES EN STOCK: 200
 - CÓDIGO LABORATORIO: 0011
 - CÓDIGO: 0057
-- UNIDADES: 1
 
 ## Laboratorio
 - Existe una PERSONA de CONTACTO como representante del laboratorio
