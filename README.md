@@ -107,3 +107,5 @@ Un pedido puede estar realizado por ninguno o un cliente con crédito.
 Un cliente con crédito puede no realizar ningún pedido o varios.
 
 
+[alt tag](/ejemplo_farmacia.png)
+
