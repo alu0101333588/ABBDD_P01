@@ -7,10 +7,10 @@ Proyecto draw.io: https://drive.google.com/file/d/1jHXklJKXHCFSk1o-k9NsDQ2-O7wii
 # Entidades definidas
 
 ## Medicamento
-- Un medicamento contiene un NOMBRE 
+- Un medicamento contiene un NOMBRE
 - Se debe indicar si es con o sin RECETA 
 - Pertenece a una o varias FAMILIA de medicamentos en función de las enfermedades para las que se puede preinscribir
-- Tiene un PRECIO
+- Tiene un PRECIO en euros
 - Es de un TIPO en función de si es jarabe, comprimido, pomada,...
 - Se almacena el número de UNIDADES VENDIDAS
 - Se almacena el número de UNIDADES EN STOCK
