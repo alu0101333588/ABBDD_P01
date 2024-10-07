@@ -11,7 +11,7 @@ Proyecto draw.io: https://drive.google.com/file/d/1jHXklJKXHCFSk1o-k9NsDQ2-O7wii
 ## Medicamento
 - Un medicamento contiene un NOMBRE
 - Se debe indicar si es con o sin RECETA 
-- Pertenece a una o varias FAMILIA de medicamentos en función de las enfermedades para las que se puede preinscribir
+- Pertenece a una o varias FAMILIA de medicamentos en función de las enfermedades para las que se puede preinscribir (multivaluado)
 - Tiene un PRECIO en euros
 - Es de un TIPO en función de si es jarabe, comprimido, pomada,...
 - Se almacena el número de UNIDADES VENDIDAS
@@ -33,22 +33,29 @@ Por tanto, un medicamento no puede contener un mismo código y código de labora
 - CÓDIGO: 0057
 
 ## Laboratorio
-- Existe una PERSONA de CONTACTO como representante del laboratorio
-- Se almacena el número de FAX
-- Se almacena el número de TELÉFONO
+- Existe una o varias PERSONA de CONTACTO como representante del laboratorio (multivaluado)
+- Se almacena el o los números de FAX (multivaluado)
+- Se almacena el o los números de TELÉFONO (multivaluado)
 - Los laboratorios contienen un CÓDIGO único 
 - Poseen un NOMBRE 
-- Se ubican en una DIRECCIÓN POSTAL
+- Se ubican en una DIRECCIÓN (atributo compuesto):
+  	- Cuenta con una CALLE
+  	- Un NÚMERO de calle
+  	- Pertenece a un MUNICIPIO
+  	- Pertenece a una PROVINCIA
 - **Identificador**: 'Código'
 
 ### Ejemplo
-- PERSONA CONTACTO: Felipe González Armas
-- FAX: 922 000 000
-- TELÉFONO: 608 000 000
+- PERSONA CONTACTO: Felipe González Armas, María José Gómez López
+- FAX: 922 000 000, 928 000 000
+- TELÉFONO: 608 000 000, 607 000 000
 - CÓDIGO: 0034
 - NOMBRE: Candelaria Lab
-- DIRECCIÓN POSTAL: Av. Marítima, 45. Candelaria. Tenerife. Santa Cruz de Tenerife
-- 
+- DIRECCIÓN:
+  	- CALLE: Av. Marítima
+  	- NÚMERO: 45
+  	- MUNICIPIO: Candelaria
+  	- PROVINCIA: Santa Cruz de Tenerife
   
 ## Pedido
 - Un pedido contiene una FECHA DE COMPRA
@@ -62,7 +69,7 @@ Por tanto, un medicamento no puede contener un mismo código y código de labora
 - FECHA DE PAGO: 06/10/2024
 - MEDICAMENTOS:
 	- NOMBRE: Paracetamol
-	- RECETA: SÍ
+	- RECETA: No
 	- FAMILIA: analgésico, antipirético
 	- PRECIO:3
 	- TIPO: comprimido
@@ -70,13 +77,17 @@ Por tanto, un medicamento no puede contener un mismo código y código de labora
 	- UNIDADES EN STOCK: 200
 	- CÓDIGO LABORATORIO: 0011
 	- CÓDIGO: 0057
-	- UNIDADES: 1
-	
+	- UNIDADES: 3
+
 
 ## Clientes con crédito
 - Un cliente con crédito posee un NOMBRE
 - También posee unos APELLIDOS
-- Se almacena la DIRECCIÓN 
+- Se almacena la DIRECCIÓN (atributo compuesto):
+	- Cuenta con una CALLE
+  	- Un NÚMERO de calle
+  	- Pertenece a un MUNICIPIO
+  	- Pertenece a una PROVINCIA 
 - Se guarda el NÚMERO DE TELÉFONO para los casos en los que sea necesario contactar 
 - El NÚMERO de CUENTA IBAN para realizar los pagos según los plazos establecidos
 - CÓDIGO que es único para el cliente y que sirve para identificarle de manera inequívoca
