@@ -3,9 +3,11 @@ Práctica 01 - Administración de Bases de Datos
 Realizada por Andrés Hernández Ortega y Luka Kravarusic Sljapic
 
 Proyecto draw.io: https://drive.google.com/file/d/1jHXklJKXHCFSk1o-k9NsDQ2-O7wiioGj/view?usp=drive_link
+# Modelo entidad-relación 
+![Modelo entidad-relación](/practica1.drawio.png)
+
 
 # Entidades definidas
-
 ## Medicamento
 - Un medicamento contiene un NOMBRE
 - Se debe indicar si es con o sin RECETA 
