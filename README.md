@@ -127,7 +127,7 @@ Por tanto, un medicamento no puede contener un mismo código y código de labora
 
 # Relaciones entre entidades
 ## Medicamento-Laboratorio
-- Un medicameneto puede no ser fabricado por ningún laboratorio, en los casos en los que lo hace la propia farmacia, o por varios laboratorios. 
+- Un medicamento puede no ser fabricado por ningún laboratorio, en los casos en los que lo hace la propia farmacia, o por varios laboratorios. 
 - Un laboratorio puede fabricar como mínimo un medicamento y como máximo un número indefinido (muchos) medicamentos. 
 
 ## Medicamento-Pedido
